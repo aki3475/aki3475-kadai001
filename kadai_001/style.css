@@ -1,0 +1,70 @@
+/*全体*/
+/*全体*/
+*{box-sizing: border-box;
+    color: black;
+    background-color:#ffffff;}
+    
+    
+    /*body要素*/
+    body{max-width: 1080px;
+    font-family: "Noto Sans Japanese";
+    }
+    
+    img{width: 100% }
+    
+    /*トップ画面*/
+    
+    /*自己紹介画面*/
+    #profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px;
+    }
+    
+ #my-about{margin-right:30px;}
+
+#profile>div{margin-left:70px;
+            margin-top:30px;}
+
+/* 〇カット顔写真*/
+ #profile img{border-radius:50%;
+width:80%;
+ padding-left:10px;}
+        
+      
+    /*文字サイズ*/
+      h2 {
+        margin: 0;
+        padding: 10px 0 40px;
+        text-align: center;
+        font-size: 34px;
+        }
+      #my-about p {
+        font-size: 24px;
+        font-weight: bold; }
+      #my-about li {
+        margin: 0 20px;
+        font-size: 18px;}
+       
+     /*3つの景色写真*/   
+     #works>#pictures{
+            width:75%;
+           margin-left:100px;} 
+      
+    #sp-set{display: none;} /* デフォルトで非表示 */       
+/*フッター*/
+ #copyright{text-align: center;}
+ 
+ /*====================
+ スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px){
+
+#pc-content{display: none;} /* 767px以下でPC用コンテンツを非表示 */
+#sp-set{display: block;/* 767px以下で画像を表示 */
+width: 100%;
+height: auto;} 
+  }
+ 
