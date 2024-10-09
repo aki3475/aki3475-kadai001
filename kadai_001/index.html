@@ -9,13 +9,23 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     </head>
-    <body>
-    <div id="pc-content">  
- <!--ヘッダー-->
 
- <nav>
-    <img src="images/Frame 7.png" alt="項目">
-</nav>
+    <body>
+    <header> <!--ヘッダーナビ--> 
+        <nav>
+        <div class="header-box">
+        <h1>
+          <a href="index.html" class="home">My Profile</a>
+        </h1>
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+          </ul>
+        </div>
+        </nav>
+    </header>          
+ <main>   
+ <article>
 <div>
     <img src="images/main.png" alt="カメラの写真">
 </div>
@@ -26,10 +36,8 @@
     <div>
         <img src="images/about.png" alt="自己写真" >   
     </div>
-    
-    <div id="my-about">
-        
-        <div id="my-about2">
+ 
+    <div id="my-about">     
     <p>Kazuki Asahina</p>
     <ul>
         <li>25歳 長野県佐久市出身</li>
@@ -38,21 +46,33 @@
         <li>自然を撮影するのが好きで、海や山によく行く</li>
     </ul>
 </div>
+</section>
+<h2>Works</h2>
+<section>
+<div id="works-content">
+<div class="works-explain works-content2">
+  <img src="images/works1.png" alt="日本海">
+  <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した１枚</p>
 </div>
-</section>
-<section id="works">
-  <div id="pictures">
-    <img src="images/Frame 13 (1).png">
-</div> 
+<div class="works-explain">   
+<img  src="images/works2.png" alt="御嶽山">
+<p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+</div>
+<div class="works-explain">   
+    <img  src="images/works3.png" alt="京都の街並み">
+    <p>京都で撮影した、明け方の古き良き日本の街並み</p>
+</div>
 
+</div>
+  
 </section>
 
-<div id="sp-set">
-        <img src="images/Group 3.jpg" alt="スマホ用イメージ"></div>
+
 <footer>
     <p id="copyright">&copy;MyProfile,All Rights Reserved.</p>
  
 </footer>
-</div>  
+</article>
+ </main> 
 </body>
 </html>

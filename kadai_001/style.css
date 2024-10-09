@@ -1,70 +1,136 @@
 /*全体*/
-/*全体*/
 *{box-sizing: border-box;
-    color: black;
-    background-color:#ffffff;}
-    
-    
-    /*body要素*/
-    body{max-width: 1080px;
-    font-family: "Noto Sans Japanese";
-    }
-    
-    img{width: 100% }
-    
-    /*トップ画面*/
-    
-    /*自己紹介画面*/
-    #profile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 960px;
-    }
-    
- #my-about{margin-right:30px;}
+  color: black;
+  background-color:#ffffff;}
+  
+  
+  /*body要素*/
+  body{max-width: 1080px;
+  font-family: "Noto Sans JP", sans-serif;
+  }
+  /* ヘッダーナビ */
+.header-box {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 950px;
+}
+
+/* MyProfileの見出し部分 */
+.header-box h1 {
+  margin: 0 0 0 20px;
+  font-size: 34px;
+  color: black;
+  border: 1px solid black;
+  padding: 0px 20px; 
+  font-weight: bold;
+  text-decoration: none;
+}
+.home {
+  text-decoration: none;
+}
+/* ナビ */
+ .menu {
+  display: flex;
+  padding-left: 0;
+}
+
+.menu li {
+  margin: 0 20px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.menu a {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+  
+  /*トップ画面*/
+  img{width:100%;
+    height:auto;
+  margin: 0,auto;}
+
+  /*プロフィール*/
+  h2 {
+  margin: 0;
+  padding: 60px 0 40px;
+  text-align: center;
+  font-size: 34px;
+}
+  #profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+  }
+  
+#my-about{margin-right:30px;}
 
 #profile>div{margin-left:70px;
-            margin-top:30px;}
+          margin-top:30px;}
 
 /* 〇カット顔写真*/
- #profile img{border-radius:50%;
+#profile img{border-radius:50%;
 width:80%;
- padding-left:10px;}
-        
+padding-left:10px;}
       
-    /*文字サイズ*/
-      h2 {
-        margin: 0;
-        padding: 10px 0 40px;
-        text-align: center;
-        font-size: 34px;
-        }
-      #my-about p {
-        font-size: 24px;
-        font-weight: bold; }
+#works-content {
+  width: 80%; /* 必要に応じて調整 */
+  display: flex;
+  justify-content: space-around; /* 均等に配置 */
+  text-align: center;
+  margin: 0 auto; /* センターに配置 */
+}
+
+#works-content .works-explain {
+  flex: 1; /* 各要素が同じ割合のスペースを取る */
+  margin: 0 10px; /* 必要に応じて調整 */
+}
+
+#works-content img {
+  width: auto; /* 自動調整 */
+  max-width: 100%; /* 最大幅を設定して親要素からはみ出さないように */
+  height: auto; /* 比率を保つ */
+}
+
+  /*文字サイズ*/
+    h2 {
+      margin: 0;
+      padding: 10px 0 40px;
+      text-align: center;
+      font-size: 34px;
+      }
+    #my-about p {
+      font-size: 24px;
+      font-weight: bold; }
       #my-about li {
-        margin: 0 20px;
-        font-size: 18px;}
-       
-     /*3つの景色写真*/   
-     #works>#pictures{
-            width:75%;
-           margin-left:100px;} 
-      
-    #sp-set{display: none;} /* デフォルトで非表示 */       
+      margin: 0 20px;
+      font-size: 18px;}
+      .works-explain{font-size: 18px;}
+    footer p{font-size: 18px;}
+   /* デフォルトで非表示 */       
 /*フッター*/
- #copyright{text-align: center;}
- 
- /*====================
- スマートフォン用のスタイル
+#copyright{text-align: center;
+  padding-top:20px;}
+
+/*====================
+スマートフォン用のスタイル
 =====================*/
 @media screen and (max-width: 767px){
-
-#pc-content{display: none;} /* 767px以下でPC用コンテンツを非表示 */
-#sp-set{display: block;/* 767px以下で画像を表示 */
+   #header-box{display: flex;
+  width:auto;}
+#profile{ flex-direction: column;}
+#works-content{
+flex-direction: column; /* 767px以下でPC用コンテンツを非表示 */
 width: 100%;
 height: auto;} 
-  }
- 
+.works-explain{text-align: center;}
+
+#works-content img{width: 100%;
+margin: 0;}}
