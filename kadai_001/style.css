@@ -5,7 +5,7 @@
   
   
   /*body要素*/
-  body{max-width: 1080px;
+  body{max-width: 960px;
   font-family: "Noto Sans JP", sans-serif;
   }
   /* ヘッダーナビ */
@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
-  max-width: 950px;
+  max-width: 960px;
 }
 
 /* MyProfileの見出し部分 */
@@ -51,9 +51,10 @@
 
   
   /*トップ画面*/
-  img{width:100%;
-    height:auto;
-  margin: 0,auto;}
+ img{ width: 100vw; /* ビューポートの幅に合わせる */
+  height: auto;
+  display: block;
+  margin: 0 auto;}
 
   /*プロフィール*/
   h2 {
@@ -133,4 +134,9 @@ height: auto;}
 .works-explain{text-align: center;}
 
 #works-content img{width: 100%;
-margin: 0;}}
+margin: 0;}
+
+img{width:100%;
+  height:auto;
+margin: 0,auto;}
+}
