@@ -5,10 +5,14 @@
   
   
   /*body要素*/
-  body{max-width: 960px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin: 0 auto;
-  }
+  body {
+    max-width: 960px;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0 auto;
+}
+
+
+
   /* ヘッダーナビ */
 .header-box {
   display: flex;
@@ -54,11 +58,14 @@
 
   
   /*トップ画面*/
- .camera img{ width: 100vw; /* ビューポートの幅に合わせる */
+ .camera img {
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-max-width: 960px;}
+  max-width: 960px;
+}
+
 
   /*プロフィール*/
   h2 {
