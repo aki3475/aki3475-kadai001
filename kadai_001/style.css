@@ -7,16 +7,16 @@
   /*body要素*/
   body{max-width: 960px;
   font-family: "Noto Sans JP", sans-serif;
+  margin: 0 auto;
   }
   /* ヘッダーナビ */
 .header-box {
   display: flex;
-  
-  
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
-  margin-top:-25px;
+  margin-top:-10px;
   max-width: 960px;
 }
 
@@ -32,6 +32,7 @@
 }
 .home {
   text-decoration: none;
+  display: flex;
 }
 /* ナビ */
  .menu {
@@ -42,7 +43,7 @@
 .menu li {
   margin: 0 20px;
   list-style: none;
-  font-size: 18px;
+  
 }
 
 .menu a {
@@ -56,7 +57,8 @@
  .camera img{ width: 100vw; /* ビューポートの幅に合わせる */
   height: auto;
   display: block;
-  margin: 0 auto;}
+  margin: 0 auto;
+max-width: 960px;}
 
   /*プロフィール*/
   h2 {
@@ -80,8 +82,7 @@
 
 /* 〇カット顔写真*/
 #profile img{border-radius:50%;
-width: 120%;
-padding-left:10px;}
+margin: 0 auto;}
       
 #works-content {
   width: 80%; /* 必要に応じて調整 */
@@ -116,6 +117,7 @@ padding-left:10px;}
       margin: 0 20px;
       font-size: 18px;}
       .works-explain{font-size: 18px;}
+
     footer p{font-size: 18px;}
    /* デフォルトで非表示 */       
 /*フッター*/
@@ -135,10 +137,44 @@ width: 100%;
 height: auto;} 
 .works-explain{text-align: center;}
 
-#works-content img{width: 100%;
-margin: 0;}
+#works-explain img{width: 100%; /* ビューポートの幅に合わせる */
+  height: auto;
+  display: block;
+  margin: 0 auto;}
 
 .camera img{width:100%;
   height:auto;
 margin: 0,auto;}
-}
+
+#profile img{width:100%;
+margin: 0 auto;}
+
+
+/*文字サイズ*/
+.header-box h1 {
+  margin: 0 0 0 20px;
+  font-size: 27px;}
+
+  .menu a {
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;}
+
+h2 {
+  margin: 0;
+  padding: 10px 0 40px;
+  text-align: center;
+  font-size: 27px;
+  }
+#my-about p {
+  font-size: 20px;
+  font-weight: bold; }
+  #my-about li {
+  margin: 0 20px;
+  font-size: 16px;}
+
+  .works-explain{font-size: 16px;}
+footer p{font-size: 16px; }
+
+  
+  }
