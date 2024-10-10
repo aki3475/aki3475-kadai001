@@ -12,9 +12,11 @@
 .header-box {
   display: flex;
   
+  
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
+  margin-top:-25px;
   max-width: 960px;
 }
 
@@ -78,7 +80,7 @@
 
 /* 〇カット顔写真*/
 #profile img{border-radius:50%;
-width:80%;
+width: 120%;
 padding-left:10px;}
       
 #works-content {
@@ -127,7 +129,7 @@ padding-left:10px;}
    #header-box{display: flex;
   width:auto;}
 #profile{ flex-direction: column;}
-#works-content{
+#works-content{display: inline-block;
 flex-direction: column; /* 767px以下でPC用コンテンツを非表示 */
 width: 100%;
 height: auto;} 
