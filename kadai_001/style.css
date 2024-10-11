@@ -84,12 +84,12 @@
   
 #my-about{margin-right:30px;}
 
-#profile>div{margin-left:70px;
-          margin-top:30px;}
+#profile>div{margin :0 auto;}
 
 /* 〇カット顔写真*/
-#profile img{border-radius:50%;
-margin: 0 auto;}
+#profile >div >img{border-radius:50%;
+margin: 0 auto;
+text-align: center;}
       
 #works-content {
   width: 80%; /* 必要に応じて調整 */
