@@ -9,6 +9,7 @@
     max-width: 1280px;
     font-family: "Noto Sans JP", sans-serif;
     margin: 0 auto;
+    font-size: 18px;
 }
 
 
@@ -16,12 +17,16 @@
   /* ヘッダーナビ */
 .header-box {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
-  margin-top:-10px;
   max-width: 1280px;
+}
+.header-box a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* MyProfileの見出し部分 */
@@ -31,8 +36,7 @@
   color: black;
   border: 1px solid black;
   padding: 0px 20px; 
-  font-weight: bold;
-  text-decoration: none;
+  
 }
 .home {
   text-decoration: none;
@@ -52,18 +56,20 @@
 
 .menu a {
   font-size: 34px;
-  font-weight: bold;
-  text-decoration: none;
+  
 }
 
   
+
   /*トップ画面*/
  .camera img {
   width: 100%;
   height: auto;
-  display: block;
   margin: 0 auto;
-  ;
+}
+p,
+li {
+  font-size: 18px;
 }
 
 
@@ -75,11 +81,13 @@
   font-size: 34px;
 }
   #profile{
+  padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
-  max-width: 960px;
+  max-width: 1280px;
   }
   
 #my-about{margin-right:30px;}
@@ -87,9 +95,11 @@
 #profile>div{margin :0 auto;}
 
 /* 〇カット顔写真*/
-#profile >div >img{border-radius:50%;
-margin: 0 auto;
-text-align: center;}
+#profile >div >img{
+  border-radius:50%;
+width: 280px;
+ height: 280px;
+}
       
 #works-content {
   width: 80%; /* 必要に応じて調整 */
@@ -110,33 +120,18 @@ text-align: center;}
   height: auto; /* 比率を保つ */
 }
 
-  /*文字サイズ*/
-    h2 {
-      margin: 0;
-      padding: 10px 0 40px;
-      text-align: center;
-      font-size: 34px;
-      }
-    #my-about p {
-      font-size: 24px;
-      font-weight: bold; }
-      #my-about li {
-      margin: 0 20px;
-      font-size: 18px;}
-      .works-explain{font-size: 18px;}
-
-    footer p{font-size: 18px;}
-   /* デフォルトで非表示 */       
+        
 /*フッター*/
 #copyright{text-align: center;
   padding-top:20px;}
+  footer p{font-size: 18px;}
 
 /*====================
 スマートフォン用のスタイル
 =====================*/
 @media screen and (max-width: 767px){
-   #header-box{display: flex;
-  width:auto;}
+   #header-box{flex-wrap: nowrap;
+  margin: 20px auto;}
 #profile{ flex-direction: column;}
 #works-content{display: inline-block;
 flex-direction: column; /* 767px以下でPC用コンテンツを非表示 */
@@ -158,30 +153,50 @@ margin: 0 auto;}
 
 
 /*文字サイズ*/
-.header-box h1 {
-  margin: 0 0 0 20px;
-  font-size: 27px;}
 
-  .menu a {
-    font-size: 27px;
-    font-weight: bold;
-    text-decoration: none;}
+ .menu a {
+  font-size: 21px;
+}
+
+.header-box {
+  flex-wrap: nowrap;
+  margin: 20px auto;
+}
+
+.header-box h1 {
+  padding: 0 20px;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+#my-about {
+  padding: 0 20px;
+}
+
+#my-about p {
+  font-size: 24px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.header-box h1 {
+  font-size: 28px;
+}
+
+#profile > div > img {
+  height: 280px;
+  width: 280px;
+}
+
+#my-about li {
+  font-size: 18px;
+  margin: 0;
+}
 
 h2 {
-  margin: 0;
-  padding: 10px 0 40px;
-  text-align: center;
-  font-size: 27px;
-  }
-#my-about p {
-  font-size: 20px;
-  font-weight: bold; }
-  #my-about li {
-  margin: 0 20px;
-  font-size: 16px;}
+  padding: 30px 0 20px;
+}
 
-  .works-explain{font-size: 16px;}
-footer p{font-size: 16px; }
-
-  
-  }
+}
